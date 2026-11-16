@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h1>Create Account</h1>
+        <p>Register as a new student.</p>
+
+        <form id="registerForm">
+            <label>Full Name</label>
+            <input type="text" id="full_name" placeholder="Your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="reg_email" placeholder="Your email" required>
+
+            <label>Password</label>
+            <input type="password" id="reg_password" minlength="8" placeholder="Minimum 8 characters" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>Already registered?
+            <a href="index.html">Login</a>
+        </p>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

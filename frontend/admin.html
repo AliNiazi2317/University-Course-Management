@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>🎓 Admin Portal</h2>
+    <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="dashboard">
+    <h1>Admin Dashboard</h1>
+    <p>Manage all university courses.</p>
+
+    <div class="profile-card">
+        <h3>Administrator</h3>
+        <p id="adminEmail"></p>
+    </div>
+
+    <h2>Add New Course</h2>
+
+    <form id="courseForm" class="course-form">
+        <input id="course_name" placeholder="Course Name" required>
+        <input id="course_code" placeholder="Course Code" required>
+        <input id="instructor" placeholder="Instructor Name" required>
+        <input id="credit_hours" type="number" min="1" max="6" placeholder="Credit Hours" required>
+        <textarea id="description" placeholder="Course Description"></textarea>
+        <button type="submit">Add Course</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Manage Courses</h2>
+    <div id="courseList" class="course-grid"></div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
